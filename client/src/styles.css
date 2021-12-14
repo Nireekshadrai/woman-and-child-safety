@@ -1,0 +1,350 @@
+.App,.App2 {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 217vh;
+}
+.about {
+  position: relative;
+  width: 100%;
+  padding: 45px 0;
+}
+
+.about .section-header {
+  margin-bottom: 30px;
+}
+
+.about .about-img {
+  position: relative;
+  height: 100%;
+  padding: 10px;
+  background: #24264f;
+}
+.timeline {
+  position: relative;
+  padding: 45px 0;
+}
+
+.timeline .timeline-start {
+  position: relative;
+  width: calc(100% + 30px);
+  left: -15px;
+  right: -15px;
+}
+
+.timeline .timeline-container {
+  padding: 0 15px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+  margin-top: -5px;
+}
+
+.timeline .timeline-container.left {
+  left: 0;
+}
+
+.timeline .timeline-container.right {
+  left: 50%;
+}
+
+.timeline .timeline-container::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 5px;
+  background: #fecda2;
+  z-index: 1;
+}
+
+.timeline .timeline-container.left::before {
+  top: 0;
+  right: 0;
+}
+
+.timeline .timeline-container.right::before {
+  bottom: 0;
+  left: 0;
+}
+
+.timeline .timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 5px;
+  background: #fecda2;
+  z-index: 1;
+}
+
+.timeline .timeline-container.left::after {
+  bottom: 0;
+  right: 0;
+}
+
+.timeline .timeline-container.right::after {
+  top: 0;
+  left: 0;
+}
+
+.timeline .timeline-container:first-child::before,
+.timeline .timeline-container:last-child::before {
+  display: none;
+}
+
+.timeline .timeline-container .timeline-content {
+  padding: 30px;
+  background: #24264f;
+  position: relative;
+  border-right: 5px solid #fecda2;
+}
+
+.timeline .timeline-container.right .timeline-content {
+  border-left: 5px solid #fecda2;
+}
+
+.timeline .timeline-container .timeline-content h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fecda2;
+}
+
+.timeline .timeline-container .timeline-content h2 span {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 5px 10px;
+  color: #24264f;
+  background: #fecda2;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+
+.timeline .timeline-container .timeline-content p {
+  margin: 0;
+  font-size: 16px;
+  color: #999999;
+}
+
+@media (max-width: 767.98px) {
+  .timeline .timeline-container {
+      width: 100%;
+      margin-top: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 30px;
+  }
+  
+  .timeline .timeline-container:last-child {
+      padding-bottom: 0;
+  }
+  
+  .timeline .timeline-container.right {
+      left: 0%;
+  }
+ 
+  a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+  }
+  .timeline .timeline-container.left::after, 
+  .timeline .timeline-container.right::after,
+  .timeline .timeline-container.left::before,
+  .timeline .timeline-container.right::before {
+      width: 5px;
+      height: 35px;
+      left: 15px;
+  }
+  
+  .timeline .timeline-container.left .timeline-content,
+  .timeline .timeline-container.right .timeline-content {
+      border-left: 5px solid #fecda2;
+      border-right: none;
+  }
+}
+
+
+.buttonstyle{
+  background-color: #141850; /* Green */
+  border: none;
+  color:white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  position:right;
+  font-size: 16px;
+ }
+ .buttonstyle:hover { 
+   background: rgb(37, 187, 17); 
+  }
+.f{
+  align-items: center;
+  padding: 35px;
+  margin-right:0;
+  background-color: #141850;
+  justify-content: space-between;
+}
+.sliderimg{
+  width: 80%;
+  height: 450px;
+  padding-left: 150px;
+  padding-right: 5px;
+
+}
+#alice{
+  padding: right 370px;
+}
+#alice1{
+  padding: right 370px;
+}
+.h{
+  color:#141580;
+  background-color: #f2d3bc;
+  padding:10px 0;
+  position: relative;
+
+}
+.quote{
+  font-family: "ED GARAMOND",italic,verdana;
+  font-size:20px;
+}
+.h .h1{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "EB Garmond", serif;
+  font-size: 50px;
+  
+}
+.move{
+  font-family: "EB Garmond", serif;
+  font-size: 40px;
+}
+.donation{
+  text-shadow:#383;
+  text-align: center;
+}
+.qu{
+  font-family: cursive;
+  font-size:30px;
+}
+.don{
+  width:700px;
+  height:280px;
+}
+.a{
+  font-family: cursive;
+  font-size: 20px;
+}
+.contact {
+  position: relative;
+  width: 97%;
+  padding: 45px 0 15px 0;
+}
+
+.contact .contact-info {
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 30px;
+  background: #24264f;
+}
+
+.contact .contact-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 30px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  border: 2px solid #daa520;
+}
+.icons{
+  padding-left: 550px;
+}
+.text{
+  text-align: center;
+}
+.contact .contact-item i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #daa520;
+  border: 2px solid #daa520;
+}
+
+.contact .contact-text {
+  position: relative;
+  width: auto;
+  padding-left: 15px;
+}
+
+.contact .contact-text h2 {
+  color: #daa520;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.contact .contact-text p {
+  margin: 0;
+  color: #999999;
+  font-size: 16px;
+}
+
+.contact .contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact .contact-form {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.contact .contact-form input {
+  height: 60px;
+  border-radius: 0;
+  border-width: 2px;
+  border-color: #24264f;
+}
+
+.contact .contact-form textarea {
+  height: 190px;
+  border-radius: 0;
+  border-width: 2px;
+  border-color: #24264f;
+}
+
+.contact .contact-form .btn {
+  padding: 16px 35px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #daa520;
+  background: #24264f;
+  border: 2px solid #daa520;
+  border-radius: 0;
+  transition: .3s;
+}
+
+.contact .contact-form .btn:hover {
+  color: #24264f;
+  background: #daa520;
+}
+.btn{
+  color: black;
+  background-color: #fecda2;
+}

@@ -1,0 +1,79 @@
+#defense,#helpline,#safety,#intro{
+    background-color: #f2ebe9;
+    border: 5px solid #264143;
+}
+.self{
+    background-color: #f2ebe9;
+    border: 5px solid #264143;
+}
+#block{
+    background-color: #f2ebe9;
+    border: 5px solid #264143;
+}
+#head{
+      font-size: 40px;
+      text-align: center;
+}
+#head h1{
+      font-size: 40px;
+      text-align: center;
+      color: #de5499;
+}
+#defense p,#helpline p,#safety p,#intro p{
+      font-size: 40px;
+      text-align: center;
+      color: #de5499;
+}
+#intro{
+      font-style:italic;
+      font-weight: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: #264143;
+      font-size: 32px;
+      background-color: #eddcd9;
+      
+}
+.scroll-left {
+    height: 50px; 
+    overflow: hidden;
+    position: relative;
+    font-size: 40px;
+}
+.scroll-left p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color: #de5499;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%); 
+    transform:translateX(100%);
+    /* Apply animation to this element */ 
+    -moz-animation: scroll-left 25s linear infinite;
+    -webkit-animation: scroll-left 25s linear infinite;
+    animation: scroll-left 25 s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+    0% { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+    0% { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+    0% { 
+        -moz-transform: translateX(100%); /* Browser bug fix */
+        -webkit-transform: translateX(100%); /* Browser bug fix */
+        transform: translateX(100%); 
+    }
+    100% { 
+        -moz-transform: translateX(-100%); /* Browser bug fix */
+        -webkit-transform: translateX(-100%); /* Browser bug fix */
+        transform: translateX(-100%); 
+    }
+}
